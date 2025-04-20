@@ -6,7 +6,6 @@ ReservAPI
 - Banco de dados PostgreSQL
 - Uso de cache com redis para diminuir chamadas ao banco
 - CircuitBracker
-- Criação, alteração e exclusão de usuario via eventos usando Kafka
 - Websocket para comunicação em tempo real de disponibilidade
 - Processamento assíncrono para o envio de emails, @Async
 - Envio de emails com SendGrid ou outro
@@ -93,5 +92,7 @@ ReservAPI
 ## Atributos
 
 Room: name, capacity, location, status, type (Auditorium, Classroom, Laboratory), description, reason, createdAt, updatedAt
+
 User: name, telephone, email, address, type, createdAt, updatedAt, description
+
 Reservation: startTime, endTime, status, reason, userId, roomId, createdAt, updatedAt, approvedBy, approvalDate, rejectionReason
